@@ -18,6 +18,10 @@ body {
   color: #2f2f2f;
 }
 
+.none {
+  display: none;
+}
+
 .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -175,6 +179,11 @@ body {
   position: relative;
 }
 
+.main__image-img {
+  width: 100%;
+  height: auto;
+}
+
 .main__image-person-first {
   position: absolute;
   bottom: 22px;
@@ -325,6 +334,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -347,6 +358,10 @@ body {
   color: #fff;
 }
 
+.experts-tabs__item:last-child {
+  margin: 0px 0px 0px 0px;
+}
+
 .experts-tabs-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -361,6 +376,10 @@ body {
 
 .experts-tabs-content-hidden {
   display: none;
+}
+
+.experts-tabs-content__avatar img {
+  width: 100%;
 }
 
 .experts-tabs-content__profession {
@@ -1139,5 +1158,124 @@ body {
 
 .footer-copyright span {
   color: #ff7f96;
+}
+
+@media (max-width: 1170px) {
+  .main__title {
+    max-width: 448px;
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .main {
+    margin: 30px 0px 50px 0px;
+  }
+  .main-inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .main__image {
+    margin: 0px 0px 20px 0px;
+  }
+  .main__image-person-first, .main__image-person-last {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-inner {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .header-nav, .header-social {
+    display: none;
+  }
+  .experts-tabs__list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0px 0px 30px 0px;
+  }
+  .experts-tabs__item {
+    margin: 0px 8px 10px 0px;
+  }
+  .experts-tabs__item:last-child {
+    margin: 0px 0px 10px 0px;
+  }
+  .experts-tabs-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .experts-tabs-content__avatar {
+    margin: 0px 0px 30px 0px;
+  }
+  .experts-tabs-content__profession, .experts-tabs-content__title, .experts-tabs-content__text {
+    text-align: center;
+  }
+  .experts-tabs-content__title {
+    margin: 0px auto 20px auto;
+  }
+}
+
+@media (max-width: 550px) {
+  .main {
+    margin: 0px 0px 0px 0px;
+  }
+  .experts__title {
+    font-size: 50px;
+    text-align: center;
+    letter-spacing: 0.48px;
+    color: #2f2f2f;
+    margin: 0px 0px 20px 0px;
+  }
+  .experts-tabs-content__text {
+    font-size: 16px;
+    line-height: 23px;
+    margin: 0px 0px 20px 0px;
+  }
+}
+
+@media (max-width: 500px) {
+  .main {
+    min-height: 650px;
+  }
+  .main__top-title {
+    display: block;
+    text-align: center;
+  }
+  .main__title {
+    text-align: center;
+    font-size: 45px;
+    line-height: 55px;
+  }
+  .main__text {
+    text-align: center;
+  }
+}
+
+@media (max-width: 408px) {
+  .main__title {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 375px) {
+  .experts-tabs-content__title {
+    font-size: 30px;
+  }
+  .experts-tabs-content__text {
+    font-size: 16px;
+    line-height: 23px;
+    margin: 0px 0px 20px 0px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
